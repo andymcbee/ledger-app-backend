@@ -15,7 +15,7 @@ const port = 3000;
 const env = process.env.NODE_ENV || 'development';
 console.log(`Env:: ${env}`)
 
-console.log("Testing api !...")
+console.log("Testing api...")
 
 const nets = networkInterfaces();
 const results = Object.create(null); // Or just '{}', an empty object
