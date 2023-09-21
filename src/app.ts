@@ -15,8 +15,6 @@ const port = 3000;
 const env = process.env.NODE_ENV || 'development';
 console.log(`Env:: ${env}`)
 
-console.log("Testing api...")
-
 const nets = networkInterfaces();
 const results = Object.create(null); // Or just '{}', an empty object
 
@@ -36,7 +34,7 @@ for (const name of Object.keys(nets)) {
 
 console.log(results)
 
-const allowedOrigins = ['http://localhost:5173'];
+const allowedOrigins = ['http://localhost:8080', 'http://localhost:5173', 'http://localhost:4173', 'http://ledger-app-react-1.drewmcburney.com', 'https://ledger-app-react-1.drewmcburney.com'];
 const options: cors.CorsOptions = {
   credentials: true,
   origin: allowedOrigins
