@@ -32,7 +32,6 @@ for (const name of Object.keys(nets)) {
     }
 }
 
-console.log(results)
 
 const allowedOrigins = ['http://localhost:8080', 'http://localhost:5173', 'http://localhost:4173', 'http://ledger-app-react-1.drewmcburney.com', 'https://ledger-app-react-1.drewmcburney.com'];
 const options: cors.CorsOptions = {
